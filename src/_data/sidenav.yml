@@ -125,6 +125,8 @@
     - title: Platform integration
       permalink: /docs/development/platform-integration
       children:
+        - title: C and C++ interop
+          permalink: /docs/development/platform-integration/c-interop
         - title: Web FAQ
           permalink: /docs/development/platform-integration/web
         - title: Writing platform-specific code
@@ -138,33 +140,8 @@
           permalink: /docs/development/packages-and-plugins/developing-packages
         - title: Background processes
           permalink: /docs/development/packages-and-plugins/background-processes
-        - title: Plugin migration
-          permalink: /docs/development/packages-and-plugins/plugin-api-migration
         - title: Package site
           permalink: https://pub.dev/flutter
-    - title: Add Flutter to existing app
-      permalink: /docs/development/add-to-app
-      children:
-      - title: Adding to an Android app
-        permalink: /docs/development/add-to-app/android
-        children:
-          - title: Project setup
-            permalink: /docs/development/add-to-app/android/project-setup
-          - title: Add a single Flutter screen
-            permalink: /docs/development/add-to-app/android/add-flutter-screen
-          - title: Add a Flutter Fragment
-            permalink: /docs/development/add-to-app/android/add-flutter-fragment
-          - title: Add a Splash Screen
-            permalink: /docs/development/add-to-app/android/add-splash-screen
-      - title: Adding to an iOS app
-        permalink: /docs/development/add-to-app/ios
-        children:
-          - title: Project setup
-            permalink: /docs/development/add-to-app/ios/project-setup
-          - title: Add a single Flutter screen
-            permalink: /docs/development/add-to-app/ios/add-flutter-screen
-      - title: Loading sequence and performance
-        permalink: /docs/development/add-to-app/performance
     - title: Tools & techniques
       permalink: /docs/development/tools
       children:
@@ -202,15 +179,19 @@
               permalink: /docs/development/tools/sdk/upgrading
             - title: Releases
               permalink: /docs/development/tools/sdk/archive
+            - title: Breaking changes
+              permalink: /docs/release/breaking-changes
         - title: Hot reload
           permalink: /docs/development/tools/hot-reload
         - title: Code formatting
           permalink: /docs/development/tools/formatting
+    - title: AndroidX migration
+      permalink: /docs/development/androidx-migration
 
-- title: Testing & optimization
+- title: Testing & debugging
   permalink: /docs/testing
   children:
-    - title: Debugging
+    - title: Debugging tools
       permalink: /docs/testing/debugging
     - title: Debugging apps programmatically
       permalink: /docs/testing/code-debugging
@@ -218,15 +199,33 @@
       permalink: /docs/testing/oem-debuggers
     - title: Flutter's build modes
       permalink: /docs/testing/build-modes
+    - title: Handling errors
+      permalink: /docs/testing/errors
     - title: Testing
       permalink: /docs/testing
       match-page-url-exactly: true
-    - title: Performance best practices
-      permalink: /docs/testing/best-practices
-    - title: Performance profiling
-      permalink: /docs/testing/ui-performance
-    # We don't have this page yet.
-    # - title: Making your compiled app smaller
+
+- title: Performance & optimization
+  permalink: /docs/perf
+  children:
+    - title: Overview
+      permalink: /docs/perf
+    - title: App size
+      permalink: /docs/perf/app-size
+#    - title: Memory
+#      permalink: /docs/perf/memory
+#    - title: Power usage
+#      permalink: /docs/perf/power
+    - title: Rendering performance
+      permalink: /docs/perf/rendering
+      children:
+      - title: Overview
+        permalink: /docs/perf/rendering
+        match-page-url-exactly: true
+      - title: Performance best practices
+        permalink: /docs/perf/rendering/best-practices
+      - title: Performance profiling
+        permalink: /docs/perf/rendering/ui-performance
 
 - title: Deployment
   children:
@@ -245,6 +244,8 @@
   children:
     - title: Dart resources
       permalink: /docs/resources/bootstrap-into-dart
+    - title: Compatibility policy
+      permalink: /docs/resources/compatibility
     - title: Inside Flutter
       permalink: /docs/resources/inside-flutter
     - title: Platform adaptations
@@ -254,6 +255,8 @@
     # - title: Flutter best practices # TODO
     - title: Technical videos
       permalink: /docs/resources/videos
+    - title: Books
+      permalink: /docs/resources/books
     # - title: Flutter developer communities # TODO
     # - title: Flutter learning resources # TODO
     - title: FAQ

@@ -209,17 +209,7 @@ declarations above:
 
 ```dart
 Widget build(BuildContext context) {
-  // ...
-  return DecoratedBox(
-    decoration: BoxDecoration(
-      image: DecorationImage(
-        image: AssetImage('graphics/background.png'),
-        // ...
-      ),
-      // ...
-    ),
-  );
-  // ...
+  return Image(image: AssetImage('graphics/background.png'));
 }
 ```
 
@@ -421,8 +411,6 @@ the look of your launch screen. The existing template provides
 an example of adding an image to the middle of a white splash
 screen in commented code. You can uncomment it or use other
 [drawables][] to achieve the intended effect.
-
-For more details, see [Adding a splash screen and launch screen to an Android app](/docs/development/platform-integration/add-to-app-android/add-splash-screen).
 
 #### iOS
 
