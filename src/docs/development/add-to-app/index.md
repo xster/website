@@ -29,7 +29,7 @@ It currently has the _**following limitations**_:
   (such as assuming that a Flutter `Activity` is always present).
 * As of v1.17, the Flutter module only supports AndroidX applications on Android.
 
-As of Flutter v1.26, add-to-app experimentally supports adding multiple
+As of Flutter v2.0.0, add-to-app experimentally supports adding multiple
 instances of Flutter engines, screens, or views into your app. This can
 help integration scenarios such as a hybrid navigation stack with mixed
 native and Flutter screens, or a page with multiple partial-screen Flutter
